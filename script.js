@@ -5,8 +5,8 @@
 var argumentsLength = function(...args) {
 
 const parameterArray = [...args]
-
-	return parameterArray.length
+const result = parameterArray.length
+	return result
 };
 
 
@@ -23,6 +23,10 @@ console.log(result)
 
 //Since the parameterArray.length is what I want in the end that is what will be my return value from the function. I could return the length or store it first and then return it
 
+//Actually I tested it and storing the length into a variable first gave a much better runtime and memory usage
+
 //then I want to have a way of ouputting the result of the function call so I store the call in a variable and then console.log that output
 
 //Notice if I remove the return statement of the function, I get undefined
+
+//see journal page 174 for lesson on time/space complexity
